@@ -1,8 +1,6 @@
-import { Application } from 'https://deno.land/x/oak/mod.ts';
-import 'https://deno.land/x/denv/mod.ts';
-import * as log from 'https://deno.land/std/log/mod.ts';
+import { Application, log } from './utils/deps.ts';
 
-import { PORT } from './infrastructure/persistence/configuration/dbConfiguration.ts';
+import { PORT } from './api/configuration/appSettings.ts';
 import loggerMiddleware from './api/middlewares/logger.ts';
 import timingMiddleware from './api/middlewares/timing.ts';
 import errorMiddleware from './api/middlewares/error.ts';

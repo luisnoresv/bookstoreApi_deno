@@ -1,16 +1,16 @@
 {
-  "$schema": "https://deno.land/x/denon/schema.json",
-  "scripts": {
-    "start": {
-      "cmd": "deno run --config tsconfig.json src/server.ts",
-      "allow": [
-        "env",
-        "net",
-        "read",
-        "write",
-        "plugin"
-      ],
-      "unstable": true
+    "$schema": "https://deno.land/x/denon/schema.json",
+    "scripts": {
+        "start": {
+            "cmd": "deno run --config tsconfig.json src/server.ts",
+            "allow": [
+                "env",
+                "net",
+                "read",
+                "write",
+                "plugin"
+            ],
+            "unstable": true
+        }
     }
-  }
 }

@@ -1,3 +1,6 @@
+import 'https://deno.land/x/denv/mod.ts';
+
+// We need to import denv to get access to .env
 const env = Deno.env.toObject();
 
 export const PORT = parseInt(env.PORT, 10) || 5000;
